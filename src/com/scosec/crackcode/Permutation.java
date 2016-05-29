@@ -1,18 +1,22 @@
-package com.company;
+package com.scosec.crackcode;
 
-class Main {
+public class Permutation {
 
+    static int count = 0;
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
 
-        permutation();
+        //permutation();
+        System.out.println(Fib.fib(5));
+        System.out.println(count);
     }
 
     private static void permutation() {
-        permutation("hello", "");
+        permutation("heo", "");
     }
 
     private static void permutation(String str, String prefix) {
+        count++;
         if (str.length() == 0) {
             System.out.println(prefix);
         } else {
